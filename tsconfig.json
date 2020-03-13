@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "checkJs": true,
+        "resolveJsonModule": true,
+        "lib": ["esnext"],
+        "module": "commonjs",
+        "esModuleInterop": true
+    }
+}

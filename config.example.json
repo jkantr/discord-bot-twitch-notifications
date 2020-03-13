@@ -1,0 +1,36 @@
+{
+    "domain": "https://alerts.example.com",
+    "store": {
+        "client": "sqlite3",
+        "connection": "./db.sqlite3",
+        "useNullAsDefault": true
+    },
+    "twitch": {
+        "whitelist": {
+            "keywords": ["any%", "any %", "speedrun", "speed run", "default settings"],
+            "userIds": ["72692222", "132723785", "26667445", "29781338"],
+            "gameIds": ["130942"],
+            "tagIds": []
+        },
+        "blacklist": {
+            "keywords": ["blind", "casual", "derusting", "planning", "practicing", "practice", "will%", "seablock", "bobs", "angels"],
+            "userIds": [],
+            "gameIds": [],
+            "tagIds": []
+        },
+        "credentials": {
+            "clientId": "<TWITCH CLIENT ID HERE>",
+            "clientSecret": "<TWITCH CLIENT SECRET HERE>"
+        }
+    },
+    "discord": {
+        "vipUsers": ["72692222"],
+        "credentials": {
+            "botPermissions": "313408",
+            "botToken": "<DISCORD BOT TOKEN HERE>",
+            "clientId": "<DISCORD CLIENT ID HERE>",
+            "clientSecret": "<DISCORD CLIENT SECRET HERE>"
+        },
+        "testGuildName": "TestGuildName"
+    }
+}
